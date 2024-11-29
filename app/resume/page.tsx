@@ -1,6 +1,7 @@
 import { Navigation } from "@/components/nav";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import Link from "next/link";
 
 export default function Resume() {
   return (
@@ -8,8 +9,8 @@ export default function Resume() {
       <header className="container mx-auto px-4 py-6">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <h1 className="text-xl font-bold">NAME HERE /</h1>
-            <span className="text-xl text-purple-600">PRODUCT DESIGNER</span>
+            <h1 className="text-xl font-bold">LEUL SOLOMON/</h1>
+            <span className="text-xl text-purple-600">SOFTWARE ENGINEER</span>
           </div>
           <Navigation />
         </div>
@@ -19,9 +20,15 @@ export default function Resume() {
         <div className="max-w-4xl mx-auto">
           <div className="flex justify-between items-center mb-12">
             <h1 className="text-4xl font-bold">Resume</h1>
-            <Button className="bg-purple-900 hover:bg-purple-800">
-              Download CV
-            </Button>
+            {/* Update the Button */}
+            <a
+              href="/Leul_Solomon.pdf" // Path to your PDF in the public folder
+              download="Leul_Solomon_Resume.pdf" // Set the file name for download
+            >
+              <Button className="bg-purple-900 hover:bg-purple-800">
+                Download CV
+              </Button>
+            </a>
           </div>
 
           <div className="space-y-12">
@@ -61,14 +68,12 @@ export default function Resume() {
               </CardHeader>
               <CardContent className="space-y-6">
                 <div>
-                  <h3 className="text-xl font-semibold">Master in Design</h3>
-                  <p className="text-gray-600">University Name • 2018 - 2020</p>
-                </div>
-                <div>
                   <h3 className="text-xl font-semibold">
-                    Bachelor in Digital Arts
+                    B.Sc. Degree in Software Engineering
                   </h3>
-                  <p className="text-gray-600">University Name • 2014 - 2018</p>
+                  <p className="text-gray-600">
+                    Haramaya University • 2019 - 2024
+                  </p>
                 </div>
               </CardContent>
             </Card>
@@ -80,15 +85,14 @@ export default function Resume() {
               <CardContent>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                   {[
+                    "Flutter Mobile Application",
                     "UI Design",
                     "UX Research",
-                    "Prototyping",
                     "Figma",
-                    "Adobe XD",
-                    "Sketch",
+                    "Prototyping",
                     "User Testing",
                     "Design Systems",
-                    "HTML/CSS",
+                    "Project Management",
                   ].map((skill) => (
                     <div
                       key={skill}
@@ -106,24 +110,22 @@ export default function Resume() {
 
       <footer className="container mx-auto px-4 py-6 mt-12 border-t">
         <div className="flex justify-between items-center">
-          <p className="text-sm text-gray-600">
-            © 2024 by Your Name. Created with Next.js
-          </p>
+          <p className="text-sm text-gray-600">© 2024 by Leul Solomon.</p>
           <div className="flex space-x-6">
             <div className="flex items-center space-x-2">
               <span className="text-sm font-medium">CALL</span>
-              <a href="tel:+1911000000" className="text-sm text-purple-600">
-                +1911000000
-              </a>
+              <Link href="tel:+1911000000" className="text-sm text-purple-600">
+                +251932599064
+              </Link>
             </div>
             <div className="flex items-center space-x-2">
               <span className="text-sm font-medium">E-MAIL</span>
-              <a
-                href="mailto:thismail@gmail.com"
+              <Link
+                href="mailto:leulsolm7@gmail.com"
                 className="text-sm text-purple-600"
               >
-                thismail@gmail.com
-              </a>
+                leulsolm7@gmail.com
+              </Link>
             </div>
           </div>
         </div>

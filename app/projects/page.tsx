@@ -3,6 +3,7 @@
 import { Navigation } from "@/components/nav";
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const projects = [
   {
@@ -46,8 +47,8 @@ export default function Projects() {
       <header className="container mx-auto px-4 py-6">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <h1 className="text-xl font-bold">NAME HERE /</h1>
-            <span className="text-xl text-purple-600">PRODUCT DESIGNER</span>
+            <h1 className="text-xl font-bold">LEUL SOLOMON/</h1>
+            <span className="text-xl text-purple-600">SOFTWARE ENGINEER</span>
           </div>
           <Navigation />
         </div>
@@ -100,24 +101,22 @@ export default function Projects() {
 
       <footer className="container mx-auto px-4 py-6 mt-12 border-t">
         <div className="flex justify-between items-center">
-          <p className="text-sm text-gray-600">
-            © 2024 by Your Name. Created with Next.js
-          </p>
+          <p className="text-sm text-gray-600">© 2024 by Leul Solomon.</p>
           <div className="flex space-x-6">
             <div className="flex items-center space-x-2">
               <span className="text-sm font-medium">CALL</span>
-              <a href="tel:+1911000000" className="text-sm text-purple-600">
-                +1911000000
-              </a>
+              <Link href="tel:+1911000000" className="text-sm text-purple-600">
+                +251932599064
+              </Link>
             </div>
             <div className="flex items-center space-x-2">
               <span className="text-sm font-medium">E-MAIL</span>
-              <a
-                href="mailto:thismail@gmail.com"
+              <Link
+                href="mailto:leulsolm7@gmail.com"
                 className="text-sm text-purple-600"
               >
-                thismail@gmail.com
-              </a>
+                leulsolm7@gmail.com
+              </Link>
             </div>
           </div>
         </div>
