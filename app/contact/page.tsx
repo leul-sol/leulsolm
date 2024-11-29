@@ -22,7 +22,9 @@ export default function Contact() {
         <div className="max-w-2xl mx-auto">
           <Card>
             <CardHeader>
-              <CardTitle className="text-3xl">Get in Touch</CardTitle>
+              <CardTitle className="text-3xl">
+                Leave me Something Here.
+              </CardTitle>
             </CardHeader>
             <CardContent>
               <form className="space-y-6">
@@ -31,24 +33,20 @@ export default function Contact() {
                     <label htmlFor="firstName" className="text-sm font-medium">
                       First Name
                     </label>
-                    <Input id="firstName" placeholder="John" />
+                    <Input id="firstName" />
                   </div>
                   <div className="space-y-2">
                     <label htmlFor="lastName" className="text-sm font-medium">
                       Last Name
                     </label>
-                    <Input id="lastName" placeholder="Doe" />
+                    <Input id="lastName" />
                   </div>
                 </div>
                 <div className="space-y-2">
                   <label htmlFor="email" className="text-sm font-medium">
                     Email
                   </label>
-                  <Input
-                    id="email"
-                    type="email"
-                    placeholder="john@example.com"
-                  />
+                  <Input id="email" type="email" />
                 </div>
                 <div className="space-y-2">
                   <label htmlFor="message" className="text-sm font-medium">

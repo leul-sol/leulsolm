@@ -39,24 +39,80 @@ export default function Resume() {
               <CardContent className="space-y-6">
                 <div>
                   <h3 className="text-xl font-semibold">
-                    Senior Product Designer
+                    Full Stack web developer
                   </h3>
-                  <p className="text-gray-600">Company Name • 2022 - Present</p>
+                  <p className="text-gray-600">
+                    {" "}
+                    Ethiopian Artificial Intelligence Institute
+                  </p>
                   <ul className="mt-2 list-disc list-inside text-gray-600">
-                    <li>Led the redesign of core product features</li>
-                    <li>Managed a team of 3 designers</li>
-                    <li>Improved user engagement by 40%</li>
+                    <li>Web Developer with Laravel</li>
+                    <li>
+                      Developed andmaintainedwebapplications using the Laravel
+                      framework
+                    </li>
+                    <li>
+                      Workedonfrontandbackendtasks,includingdatabase
+                      managementand server-side logic
+                    </li>
                   </ul>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold">UI/UX Designer</h3>
-                  <p className="text-gray-600">
-                    Previous Company • 2020 - 2022
-                  </p>
+                  <h3 className="text-xl font-semibold">
+                    UI/UX Designer & Flutter mobile application developer
+                  </h3>
+                  <p className="text-gray-600">JEDAN Software Solution</p>
                   <ul className="mt-2 list-disc list-inside text-gray-600">
-                    <li>Designed mobile-first web applications</li>
-                    <li>Conducted user research and usability testing</li>
-                    <li>Created design system documentation</li>
+                    <li>
+                      Designedanddelivereduser-friendlyandvisually appealing
+                      UI/UXsolutions for various clients
+                    </li>
+                    <li>
+                      Collaboratedwithclientsinpersontounderstandtheir needsand
+                      preferences, ensuring their vision was accurately
+                      reflected in the f inal designs.
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold">
+                    Mobile Application Developer
+                  </h3>
+                  <p className="text-gray-600">Ethio Clicks</p>
+                  <ul className="mt-2 list-disc list-inside text-gray-600">
+                    <li>Flutter Mobile App Developer</li>
+                    <li>
+                      Developed, maintained, and Deployed cross-platform mobile
+                      applications using Flutter. Collaborated with the team to
+                      implement new features and improve appperformance.
+                    </li>
+                    <li>Spring Boot Backend Developer</li>
+                    <li>
+                      Designed and developed RESTful APIs using SpringBoot.
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h3 className="text-xl font-semibold">
+                    UI/UX Designer & Project Manager
+                  </h3>
+                  <p className="text-gray-600">Delta Rabbit</p>
+                  <ul className="mt-2 list-disc list-inside text-gray-600">
+                    <li>UI/UXDesigner</li>
+                    <li>
+                      Conducting user research, and creating wireframes in the
+                      design of B2B webapplications. Collaborated with the
+                      design team to create intuitive anduser-friendly
+                      interfaces, applying the best UI/UX design practices.
+                    </li>
+                    <li>ProjectManager</li>
+                    <li>
+                      Worked as a project manager,while working and managing
+                      deliverable tasks, collaboration works, leading the team,
+                      planning the project, and ensuring the project is going
+                      according to plan.
+                    </li>
                   </ul>
                 </div>
               </CardContent>
@@ -93,6 +149,8 @@ export default function Resume() {
                     "User Testing",
                     "Design Systems",
                     "Project Management",
+                    "Git & Github",
+                    "Rest Api",
                   ].map((skill) => (
                     <div
                       key={skill}

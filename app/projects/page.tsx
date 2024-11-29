@@ -8,31 +8,31 @@ import Link from "next/link";
 const projects = [
   {
     id: 1,
-    title: "Desktop App Design",
+    title: "Delta Labs",
     category: "UI & UX",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/images/delta.png?height=600&width=800",
   },
   {
     id: 2,
-    title: "Mobile App Interface",
+    title: "JEDAN Code Academy",
     category: "UI & UX",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/images/jedancode.png?height=600&width=800",
   },
   {
     id: 3,
-    title: "3D Character Design",
-    category: "3D models",
-    image: "/placeholder.svg?height=600&width=800",
+    title: "Swift Delivery",
+    category: "Mobile Application",
+    image: "/images/p2p.png?height=300&width=400",
   },
   {
     id: 4,
-    title: "User Research Case Study",
-    category: "Case Studies",
-    image: "/placeholder.svg?height=600&width=800",
+    title: "Multi Solution",
+    category: "UI & UX",
+    image: "/images/multi.png?height=600&width=800",
   },
 ];
 
-const categories = ["All", "Case Studies", "UI & UX", "3D models"];
+const categories = ["All", "UI & UX", "Mobile Application"];
 
 export default function Projects() {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -56,7 +56,7 @@ export default function Projects() {
 
       <main className="container mx-auto px-4 py-12">
         <div className="flex items-center space-x-4 mb-12 overflow-x-auto pb-4">
-          <span className="text-sm font-medium">Filter by industry:</span>
+          <span className="text-sm font-medium">Filter:</span>
           {categories.map((category) => (
             <button
               key={category}

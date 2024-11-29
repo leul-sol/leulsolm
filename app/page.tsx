@@ -88,9 +88,7 @@ export default function Home() {
               <br />
               EVERYONE
             </h1>
-            <p className="text-lg text-gray-600 mb-8">
-              Heres Who I am & What I do.
-            </p>
+            <p className="text-lg text-gray-600 mb-8"></p>
             <div className="flex space-x-4">
               <Link
                 href="/resume"
