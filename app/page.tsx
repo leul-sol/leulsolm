@@ -49,7 +49,7 @@ export default function Home() {
                   </svg>
                 </Link> */}
                 <Link
-                  href="https://www.linkedin.com/in/leul-solomon-link/"
+                  href="https://www.linkedin.com/in/leul-solomon-link"
                   target="_blank"
                   className="text-gray-600 hover:text-purple-600"
                 >

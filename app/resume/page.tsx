@@ -20,7 +20,6 @@ export default function Resume() {
         <div className="max-w-4xl mx-auto">
           <div className="flex justify-between items-center mb-12">
             <h1 className="text-4xl font-bold">Resume</h1>
-            {/* Update the Button */}
             <a
               href="/Leul_Solomon.pdf" // Path to your PDF in the public folder
               download="Leul_Solomon_Resume.pdf" // Set the file name for download
