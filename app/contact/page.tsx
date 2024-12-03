@@ -23,7 +23,7 @@ export default function Contact() {
           <Card>
             <CardHeader>
               <CardTitle className="text-3xl">
-                Leave me Something Here.
+                Leave me Something Here./Under development/
               </CardTitle>
             </CardHeader>
             <CardContent>
