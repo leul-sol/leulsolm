@@ -30,6 +30,12 @@ const projects = [
     category: "UI & UX",
     image: "/images/multi.png?height=600&width=800",
   },
+  {
+    id: 5,
+    title: "Jirra Events",
+    category: "UI & UX",
+    image: "/images/jirra-event.png?height=600&width=800",
+  },
 ];
 
 const categories = ["All", "UI & UX", "Mobile Application"];
