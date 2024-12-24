@@ -47,12 +47,12 @@ export default function Resume() {
                   <ul className="mt-2 list-disc list-inside text-gray-600">
                     <li>Web Developer with Laravel</li>
                     <li>
-                      Developed andmaintainedwebapplications using the Laravel
-                      framework
+                      Developed and maintained web applications using the
+                      Laravel framework
                     </li>
                     <li>
-                      Workedonfrontandbackendtasks,includingdatabase
-                      managementand server-side logic
+                      Worked on frontand backend tasks,including database
+                      management and server-side logic
                     </li>
                   </ul>
                 </div>
@@ -63,13 +63,13 @@ export default function Resume() {
                   <p className="text-gray-600">JEDAN Software Solution</p>
                   <ul className="mt-2 list-disc list-inside text-gray-600">
                     <li>
-                      Designedanddelivereduser-friendlyandvisually appealing
-                      UI/UXsolutions for various clients
+                      Designed and delivered user-friendly and visually
+                      appealing UI/UX solutions for various clients
                     </li>
                     <li>
-                      Collaboratedwithclientsinpersontounderstandtheir needsand
-                      preferences, ensuring their vision was accurately
-                      reflected in the f inal designs.
+                      Collaborated with clients in person to understand their
+                      needs and preferences, ensuring their vision was
+                      accurately reflected in the final designs.
                     </li>
                   </ul>
                 </div>
