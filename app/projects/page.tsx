@@ -23,6 +23,7 @@ const projects = [
     title: "Swift Delivery",
     category: "Mobile Application",
     image: "/images/p2p.png?height=300&width=400",
+    link: "https://play.google.com/store/apps/details?id=com.ecleul.swiftdelivery&hl=en_US",
   },
   {
     id: 4,
@@ -80,27 +81,29 @@ export default function Projects() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {filteredProjects.map((project) => (
-            <div
-              key={project.id}
-              className="group relative aspect-[4/3] overflow-hidden rounded-lg bg-gray-100"
-            >
-              <Image
-                src={project.image}
-                alt={project.title}
-                fill
-                className="object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <h3 className="text-xl font-bold text-white">
-                    {project.title}
-                  </h3>
-                  <p className="text-sm text-gray-200 mt-2">
-                    {project.category}
-                  </p>
+            <Link key={project.id} href={project.link || "#"}>
+              <div
+                key={project.id}
+                className="group relative aspect-[4/3] overflow-hidden rounded-lg bg-gray-100"
+              >
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  fill
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute bottom-0 left-0 right-0 p-6">
+                    <h3 className="text-xl font-bold text-white">
+                      {project.title}
+                    </h3>
+                    <p className="text-sm text-gray-200 mt-2">
+                      {project.category}
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </main>
