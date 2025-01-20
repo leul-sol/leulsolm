@@ -36,6 +36,7 @@ const projects = [
     title: "Jirra Events",
     category: "UI & UX",
     image: "/images/jirra-event.png?height=600&width=800",
+    link: "https://www.figma.com/community/file/1463195724989765808/jirra-events",
   },
 ];
 
