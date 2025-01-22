@@ -17,6 +17,7 @@ const projects = [
     title: "JEDAN Code Academy",
     category: "UI & UX",
     image: "/images/jedancode.png?height=600&width=800",
+    link: "https://www.figma.com/community/file/1463957556488462019/jedan-code-academy",
   },
   {
     id: 3,
