@@ -31,11 +31,11 @@ export default function Home() {
                 <h2 className="text-xl font-bold">Leul Solomon</h2>
 
                 <p className="text-purple-600 mt-2">
-                  Mobile App Developer | UI/UXDesigner | Project Manager
+                  Flutter Mobile App Developer | UI/UXDesigner | Project Manager
                 </p>
               </div>
               <div className="mt-6 flex justify-center space-x-4 pl-8 pr-8 pb-8">
-        
+
                 <Link
                   href="https://www.linkedin.com/in/leul-solomon-link"
                   target="_blank"
