@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import GeometricFlow from "@/components/geometric-flow";
 import { Analytics } from "@vercel/analytics/react";
+import { Toaster } from "react-hot-toast";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,6 +24,7 @@ export default function RootLayout({
         <GeometricFlow />
         {children}
         <Analytics />
+        <Toaster position="top-right" />
       </body>
     </html>
   );
