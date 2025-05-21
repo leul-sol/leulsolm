@@ -31,6 +31,7 @@ const projects = [
     title: "Multi Solution",
     category: "UI & UX",
     image: "/images/multi.png?height=600&width=800",
+    link: "https://www.figma.com/community/file/1507015719739761904",
   },
   {
     id: 5,

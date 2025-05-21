@@ -72,7 +72,7 @@ export default function Home() {
 
           <div>
             <h1 className="text-6xl font-bold mb-6">
-              HELLO
+              HEY!
               <br />
               EVERYONE
             </h1>
