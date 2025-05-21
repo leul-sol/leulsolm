@@ -36,15 +36,15 @@ export default function Contact() {
 
     try {
       await emailjs.send(
-        "service_olm9nhs", // Replace with your EmailJS service ID
-        "template_sbnrjai", // Replace with your EmailJS template ID
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "",
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "",
         {
           from_name: `${formData.firstName} ${formData.lastName}`,
           from_email: formData.email,
           message: formData.message,
           to_email: "leulsolm7@gmail.com",
         },
-        "JEgZQt5lcjVH27sTL" // Replace with your EmailJS public key
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || ""
       );
 
       toast.success("Message sent successfully!");
