@@ -83,7 +83,7 @@ export default function Contact() {
             <Card>
               <CardHeader>
                 <CardTitle className="text-3xl">
-                  Get in Touch
+                  Get in Touch.
                 </CardTitle>
               </CardHeader>
               <CardContent>
