@@ -24,7 +24,30 @@ export default function RootLayout({
         <GeometricFlow />
         {children}
         <Analytics />
-        <Toaster position="top-right" />
+        <Toaster
+          position="top-center"
+          toastOptions={{
+            duration: 4000,
+            style: {
+              background: '#333',
+              color: '#fff',
+            },
+            success: {
+              duration: 3000,
+              style: {
+                background: '#4aed88',
+                color: '#fff',
+              },
+            },
+            error: {
+              duration: 4000,
+              style: {
+                background: '#ff4b4b',
+                color: '#fff',
+              },
+            },
+          }}
+        />
       </body>
     </html>
   );
