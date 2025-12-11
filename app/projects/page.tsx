@@ -40,9 +40,30 @@ const projects = [
     image: "/images/jirra-event.png?height=600&width=800",
     link: "https://www.figma.com/community/file/1463195724989765808/jirra-events",
   },
+  {
+    id: 6,
+    title: "Association Member",
+    category: "Mobile Application",
+    image: "/images/assocatoinmember.webp",
+    link: "https://play.google.com/store/apps/details?id=com.ethioclicks.association_member_mobile&pcampaignid=web_share",
+  },
+  {
+    id: 7,
+    title: "Vent Ethiopia",
+    category: "Mobile Application",
+    image: "/images/ventEthiopia.webp",
+    link: "https://play.google.com/store/apps/details?id=com.devssinia.metsnagna&pcampaignid=web_share",
+  },
+  {
+    id: 8,
+    title: "Bubu Gebeya",
+    category: "Website",
+    image: "/images/bubugebeya.png",
+    link: "https://www.bubugebeya.com/home",
+  },
 ];
 
-const categories = ["All", "UI & UX", "Mobile Application"];
+const categories = ["All", "UI & UX", "Mobile Application", "Website"];
 
 export default function Projects() {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -87,13 +108,13 @@ export default function Projects() {
             <Link key={project.id} href={project.link || "#"}>
               <div
                 key={project.id}
-                className="group relative aspect-[4/3] overflow-hidden rounded-lg bg-gray-100"
+                className="group relative aspect-[4/3] overflow-hidden rounded-lg bg-gray-100 flex items-center justify-center"
               >
                 <Image
                   src={project.image}
                   alt={project.title}
                   fill
-                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="object-contain p-8 transition-transform duration-300 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-0 left-0 right-0 p-6">

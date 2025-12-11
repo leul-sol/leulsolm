@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Vent Ethiopia App</title>
+  <desc id="desc">Placeholder cover for the Vent Ethiopia mobile app</desc>
+  <defs>
+    <linearGradient id="gradVent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0ea5e9"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" rx="24" fill="url(#gradVent)"/>
+  <rect x="110" y="100" width="580" height="420" rx="30" fill="#0b1120" opacity="0.18"/>
+  <rect x="150" y="140" width="500" height="340" rx="22" fill="#0f172a" opacity="0.35"/>
+  <circle cx="650" cy="150" r="14" fill="#22d3ee" opacity="0.9"/>
+  <circle cx="610" cy="150" r="8" fill="#e2e8f0" opacity="0.75"/>
+  <circle cx="570" cy="150" r="6" fill="#e2e8f0" opacity="0.55"/>
+  <text x="180" y="220" font-family="Inter, 'Segoe UI', sans-serif" font-size="48" font-weight="700" fill="#f8fafc">Vent Ethiopia</text>
+  <text x="180" y="270" font-family="Inter, 'Segoe UI', sans-serif" font-size="26" font-weight="500" fill="#e2e8f0">Venting & biographies for Ethiopian voices</text>
+  <text x="180" y="320" font-family="Inter, 'Segoe UI', sans-serif" font-size="20" fill="#cbd5e1">Public sharing • Private chat • Clean UI</text>
+  <rect x="180" y="370" width="220" height="56" rx="12" fill="#22d3ee" opacity="0.9"/>
+  <text x="200" y="408" font-family="Inter, 'Segoe UI', sans-serif" font-size="22" font-weight="700" fill="#0b1120">View on Play Store</text>
+  <rect x="420" y="370" width="220" height="56" rx="12" fill="#f8fafc" opacity="0.16"/>
+  <text x="440" y="408" font-family="Inter, 'Segoe UI', sans-serif" font-size="22" font-weight="600" fill="#f8fafc">Mobile Application</text>
+</svg>
+

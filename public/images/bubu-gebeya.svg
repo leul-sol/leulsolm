@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Bubu Gebeya Website</title>
+  <desc id="desc">Placeholder cover for the Bubu Gebeya ecommerce website</desc>
+  <defs>
+    <linearGradient id="gradBubu" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" rx="24" fill="url(#gradBubu)"/>
+  <rect x="120" y="110" width="560" height="400" rx="22" fill="#0b1120" opacity="0.12"/>
+  <rect x="150" y="150" width="500" height="320" rx="18" fill="#0f172a" opacity="0.3"/>
+  <circle cx="640" cy="160" r="14" fill="#fbbf24" opacity="0.9"/>
+  <circle cx="600" cy="160" r="8" fill="#fdf2f8" opacity="0.75"/>
+  <circle cx="560" cy="160" r="6" fill="#fdf2f8" opacity="0.55"/>
+  <text x="180" y="230" font-family="Inter, 'Segoe UI', sans-serif" font-size="48" font-weight="700" fill="#fdf2f8">Bubu Gebeya</text>
+  <text x="180" y="280" font-family="Inter, 'Segoe UI', sans-serif" font-size="26" font-weight="500" fill="#fde68a">Ecommerce fashion & lifestyle</text>
+  <text x="180" y="330" font-family="Inter, 'Segoe UI', sans-serif" font-size="20" fill="#fdf2f8">New arrivals • Sales • Trend-driven catalog</text>
+  <rect x="180" y="380" width="220" height="56" rx="12" fill="#fbbf24" opacity="0.92"/>
+  <text x="200" y="418" font-family="Inter, 'Segoe UI', sans-serif" font-size="22" font-weight="700" fill="#0b1120">Visit Website</text>
+  <rect x="420" y="380" width="220" height="56" rx="12" fill="#fdf2f8" opacity="0.16"/>
+  <text x="440" y="418" font-family="Inter, 'Segoe UI', sans-serif" font-size="22" font-weight="600" fill="#fdf2f8">Website</text>
+</svg>
+
