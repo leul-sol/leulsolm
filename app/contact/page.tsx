@@ -63,15 +63,15 @@ export default function Contact() {
   };
 
   return (
-    <div className="relative min-h-screen">
-      <div className="absolute inset-0" />
+    <div className="relative min-h-screen bg-white">
+      <div className="absolute inset-0 bg-white" />
 
       {/* Content */}
       <div className="relative z-10">
         <header className="container mx-auto px-4 py-6">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
-              <h1 className="text-xl font-bold">LEUL SOLOMON/</h1>
+              <h1 className="text-xl font-bold">LEUL SOLOMON /</h1>
               <span className="text-xl text-purple-600">SOFTWARE ENGINEER</span>
             </div>
             <Navigation />
@@ -142,7 +142,7 @@ export default function Contact() {
                   </div>
                   <Button 
                     type="submit"
-                    className="w-full bg-purple-900 hover:bg-purple-800"
+                    className="w-full bg-gray-900 text-white px-8 py-3 text-sm font-medium tracking-wide hover:bg-gray-800 transition-colors duration-300"
                     disabled={isLoading}
                   >
                     {isLoading ? "Sending..." : "Send Message"}
@@ -153,24 +153,24 @@ export default function Contact() {
           </div>
         </main>
 
-        <footer className="container mx-auto px-4 py-6 mt-12 border-t">
+        <footer className="container mx-auto px-4 py-6 mt-20 border-t border-gray-200">
           <div className="flex justify-between items-center">
-            <p className="text-sm text-gray-600">© 2024 by Leul Solomon.</p>
-            <div className="flex space-x-6">
+            <p className="text-sm text-gray-500">© 2024 by Leul Solomon.</p>
+            <div className="flex space-x-8">
               <div className="flex items-center space-x-2">
-                <span className="text-sm font-medium">CALL</span>
+                <span className="text-xs font-medium text-gray-500 tracking-wider">CALL</span>
                 <Link
                   href="tel:+251932599064"
-                  className="text-sm text-purple-600"
+                  className="text-sm text-gray-900 hover:text-purple-600 transition-colors"
                 >
                   +251932599064
                 </Link>
               </div>
               <div className="flex items-center space-x-2">
-                <span className="text-sm font-medium">E-MAIL</span>
+                <span className="text-xs font-medium text-gray-500 tracking-wider">E-MAIL</span>
                 <Link
                   href="mailto:leulsolm7@gmail.com"
-                  className="text-sm text-purple-600"
+                  className="text-sm text-gray-900 hover:text-purple-600 transition-colors"
                 >
                   leulsolm7@gmail.com
                 </Link>

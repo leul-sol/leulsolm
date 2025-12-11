@@ -74,11 +74,11 @@ export default function Projects() {
       : projects.filter((project) => project.category === selectedCategory);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 to-white">
+    <div className="min-h-screen bg-white">
       <header className="container mx-auto px-4 py-6">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <h1 className="text-xl font-bold">LEUL SOLOMON/</h1>
+            <h1 className="text-xl font-bold">LEUL SOLOMON /</h1>
             <span className="text-xl text-purple-600">SOFTWARE ENGINEER</span>
           </div>
           <Navigation />
@@ -86,16 +86,17 @@ export default function Projects() {
       </header>
 
       <main className="container mx-auto px-4 py-12">
-        <div className="flex items-center space-x-4 mb-12 overflow-x-auto pb-4">
-          <span className="text-sm font-medium">Filter:</span>
+        {/* Filter section */}
+        <div className="flex items-center gap-4 mb-12 overflow-x-auto pb-4">
+          <span className="text-xs font-medium text-gray-500 tracking-wider">FILTER:</span>
           {categories.map((category) => (
             <button
               key={category}
               onClick={() => setSelectedCategory(category)}
-              className={`px-4 py-2 rounded-full text-sm whitespace-nowrap ${
+              className={`px-6 py-2 text-sm font-medium tracking-wide whitespace-nowrap transition-colors duration-300 ${
                 selectedCategory === category
-                  ? "bg-purple-900 text-white"
-                  : "bg-white text-gray-600 hover:bg-purple-50"
+                  ? "bg-gray-900 text-white"
+                  : "border border-gray-900 text-gray-900 hover:bg-gray-50"
               }`}
             >
               {category}
@@ -103,25 +104,27 @@ export default function Projects() {
           ))}
         </div>
 
+        {/* Projects grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {filteredProjects.map((project) => (
-            <Link key={project.id} href={project.link || "#"}>
-              <div
-                key={project.id}
-                className="group relative aspect-[4/3] overflow-hidden rounded-lg bg-gray-100 flex items-center justify-center"
-              >
+            <Link 
+              key={project.id} 
+              href={project.link || "#"}
+              className="group"
+            >
+              <div className="relative aspect-[4/3] overflow-hidden bg-gray-50 border border-gray-200 flex items-center justify-center">
                 <Image
                   src={project.image}
                   alt={project.title}
                   fill
-                  className="object-contain p-8 transition-transform duration-300 group-hover:scale-105"
+                  className="object-contain p-8 transition-transform duration-500 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-0 left-0 right-0 p-6">
-                    <h3 className="text-xl font-bold text-white">
+                    <h3 className="text-xl font-light text-white tracking-wide">
                       {project.title}
                     </h3>
-                    <p className="text-sm text-gray-200 mt-2">
+                    <p className="text-xs text-gray-300 mt-2 tracking-wider uppercase">
                       {project.category}
                     </p>
                   </div>
@@ -132,21 +135,21 @@ export default function Projects() {
         </div>
       </main>
 
-      <footer className="container mx-auto px-4 py-6 mt-12 border-t">
+      <footer className="container mx-auto px-4 py-6 mt-20 border-t border-gray-200">
         <div className="flex justify-between items-center">
-          <p className="text-sm text-gray-600">© 2024 by Leul Solomon.</p>
-          <div className="flex space-x-6">
+          <p className="text-sm text-gray-500">© 2024 by Leul Solomon.</p>
+          <div className="flex space-x-8">
             <div className="flex items-center space-x-2">
-              <span className="text-sm font-medium">CALL</span>
-              <Link href="tel:+1911000000" className="text-sm text-purple-600">
+              <span className="text-xs font-medium text-gray-500 tracking-wider">CALL</span>
+              <Link href="tel:+251932599064" className="text-sm text-gray-900 hover:text-purple-600 transition-colors">
                 +251932599064
               </Link>
             </div>
             <div className="flex items-center space-x-2">
-              <span className="text-sm font-medium">E-MAIL</span>
+              <span className="text-xs font-medium text-gray-500 tracking-wider">E-MAIL</span>
               <Link
                 href="mailto:leulsolm7@gmail.com"
-                className="text-sm text-purple-600"
+                className="text-sm text-gray-900 hover:text-purple-600 transition-colors"
               >
                 leulsolm7@gmail.com
               </Link>
