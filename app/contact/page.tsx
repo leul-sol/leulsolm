@@ -96,7 +96,7 @@ export default function Contact() {
                       >
                         First Name
                       </label>
-                      <Input 
+                      <Input
                         id="firstName" 
                         value={formData.firstName}
                         onChange={handleChange}
