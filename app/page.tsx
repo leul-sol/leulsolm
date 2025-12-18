@@ -18,57 +18,8 @@ export default function Home() {
 
       <main className="container mx-auto px-4 py-12 sm:py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-          {/* Text content - First on mobile, second on desktop */}
-          <div className="space-y-6 sm:space-y-8 order-2 lg:order-1">
-            <div>
-              <h1 className="text-4xl sm:text-5xl lg:text-7xl font-light tracking-tight text-gray-900 mb-4">
-                HEY!
-                <br />
-                <span className="font-normal">EVERYONE</span>
-              </h1>
-            </div>
-            
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link
-                href="/resume"
-                className="px-8 py-3 bg-gray-900 text-white text-sm font-medium tracking-wide hover:bg-gray-800 transition-colors duration-300 text-center"
-              >
-                RESUME
-              </Link>
-              <Link
-                href="/projects"
-                className="px-8 py-3 border border-gray-900 text-gray-900 text-sm font-medium tracking-wide hover:bg-gray-50 transition-colors duration-300 text-center"
-              >
-                PROJECTS
-              </Link>
-            </div>
-            
-            <p className="text-gray-600 leading-relaxed max-w-lg">
-              Experienced mobile application developer, UI/UX designer, and web
-              developer with a strong foundation in project management. Skilled
-              in system design and development, I apply modern, market-ready
-              technologies to deliver reliable, user-centric solutions.
-            </p>
-            
-            {/* Skills list */}
-            <div className="pt-4 space-y-3">
-              <div className="flex items-center gap-3">
-                <div className="w-1 h-1 bg-purple-600 rounded-full"></div>
-                <span className="text-sm text-gray-700">Flutter Mobile Development</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="w-1 h-1 bg-pink-600 rounded-full"></div>
-                <span className="text-sm text-gray-700">UI/UX Design</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="w-1 h-1 bg-purple-600 rounded-full"></div>
-                <span className="text-sm text-gray-700">Project Management</span>
-              </div>
-            </div>
-          </div>
-
           {/* Sophisticated Visual Element - Second on mobile, first on desktop */}
-          <div className="relative h-[400px] sm:h-[500px] lg:h-[600px] order-1 lg:order-2">
+          <div className="relative h-[400px] sm:h-[500px] lg:h-[600px] order-2 lg:order-1">
             <style jsx>{`
               @keyframes fadeInUp {
                 from { opacity: 0; transform: translateY(30px); }
@@ -157,6 +108,55 @@ export default function Home() {
               {/* Subtle corner accents */}
               <div className="absolute top-0 left-0 w-2 h-2 border-l-2 border-t-2 border-purple-600 opacity-30"></div>
               <div className="absolute bottom-0 right-0 w-2 h-2 border-r-2 border-b-2 border-pink-600 opacity-30"></div>
+            </div>
+          </div>
+
+          {/* Text content - First on mobile, second on desktop */}
+          <div className="space-y-6 sm:space-y-8 order-1 lg:order-2">
+            <div>
+              <h1 className="text-4xl sm:text-5xl lg:text-7xl font-light tracking-tight text-gray-900 mb-4">
+                HEY!
+                <br />
+                <span className="font-normal">EVERYONE</span>
+              </h1>
+            </div>
+            
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link
+                href="/resume"
+                className="px-8 py-3 bg-gray-900 text-white text-sm font-medium tracking-wide hover:bg-gray-800 transition-colors duration-300 text-center"
+              >
+                RESUME
+              </Link>
+              <Link
+                href="/projects"
+                className="px-8 py-3 border border-gray-900 text-gray-900 text-sm font-medium tracking-wide hover:bg-gray-50 transition-colors duration-300 text-center"
+              >
+                PROJECTS
+              </Link>
+            </div>
+            
+            <p className="text-gray-600 leading-relaxed max-w-lg">
+              Experienced mobile application developer, UI/UX designer, and web
+              developer with a strong foundation in project management. Skilled
+              in system design and development, I apply modern, market-ready
+              technologies to deliver reliable, user-centric solutions.
+            </p>
+            
+            {/* Skills list */}
+            <div className="pt-4 space-y-3">
+              <div className="flex items-center gap-3">
+                <div className="w-1 h-1 bg-purple-600 rounded-full"></div>
+                <span className="text-sm text-gray-700">Flutter Mobile Development</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="w-1 h-1 bg-pink-600 rounded-full"></div>
+                <span className="text-sm text-gray-700">UI/UX Design</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="w-1 h-1 bg-purple-600 rounded-full"></div>
+                <span className="text-sm text-gray-700">Project Management</span>
+              </div>
             </div>
           </div>
         </div>
