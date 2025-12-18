@@ -70,9 +70,9 @@ export default function Contact() {
       <div className="relative z-10">
         <header className="container mx-auto px-4 py-6">
           <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-2">
-              <h1 className="text-xl font-bold">LEUL SOLOMON /</h1>
-              <span className="text-xl text-purple-600">SOFTWARE ENGINEER</span>
+            <div className="flex flex-col sm:flex-row items-start sm:items-center sm:space-x-2">
+              <h1 className="text-lg sm:text-xl font-bold">LEUL SOLOMON /</h1>
+              <span className="text-lg sm:text-xl text-purple-600">SOFTWARE ENGINEER</span>
             </div>
             <Navigation />
           </div>
@@ -82,13 +82,13 @@ export default function Contact() {
           <div className="max-w-2xl mx-auto">
             <Card>
               <CardHeader>
-                <CardTitle className="text-3xl">
+                <CardTitle className="text-2xl sm:text-3xl">
                   Get in Touch.
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid grid-cols-2 gap-4">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="space-y-2">
                       <label
                         htmlFor="firstName"
@@ -153,11 +153,11 @@ export default function Contact() {
           </div>
         </main>
 
-        <footer className="container mx-auto px-4 py-6 mt-20 border-t border-gray-200">
-          <div className="flex justify-between items-center">
-            <p className="text-sm text-gray-500">© 2024 by Leul Solomon.</p>
-            <div className="flex space-x-8">
-              <div className="flex items-center space-x-2">
+        <footer className="container mx-auto px-4 py-6 mt-12 sm:mt-20 border-t border-gray-200">
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0">
+            <p className="text-sm text-gray-500 text-center sm:text-left">© 2024 by Leul Solomon.</p>
+            <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-8 text-center sm:text-left">
+              <div className="flex flex-col sm:flex-row items-center space-y-1 sm:space-y-0 sm:space-x-2">
                 <span className="text-xs font-medium text-gray-500 tracking-wider">CALL</span>
                 <Link
                   href="tel:+251932599064"
@@ -166,7 +166,7 @@ export default function Contact() {
                   +251932599064
                 </Link>
               </div>
-              <div className="flex items-center space-x-2">
+              <div className="flex flex-col sm:flex-row items-center space-y-1 sm:space-y-0 sm:space-x-2">
                 <span className="text-xs font-medium text-gray-500 tracking-wider">E-MAIL</span>
                 <Link
                   href="mailto:leulsolm7@gmail.com"

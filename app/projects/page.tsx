@@ -77,9 +77,9 @@ export default function Projects() {
     <div className="min-h-screen bg-white">
       <header className="container mx-auto px-4 py-6">
         <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <h1 className="text-xl font-bold">LEUL SOLOMON /</h1>
-            <span className="text-xl text-purple-600">SOFTWARE ENGINEER</span>
+          <div className="flex flex-col sm:flex-row items-start sm:items-center sm:space-x-2">
+            <h1 className="text-lg sm:text-xl font-bold">LEUL SOLOMON /</h1>
+            <span className="text-lg sm:text-xl text-purple-600">SOFTWARE ENGINEER</span>
           </div>
           <Navigation />
         </div>
@@ -88,7 +88,7 @@ export default function Projects() {
       <main className="container mx-auto px-4 py-12">
         {/* Filter section */}
         <div className="flex items-center gap-4 mb-12 overflow-x-auto pb-4">
-          <span className="text-xs font-medium text-gray-500 tracking-wider">FILTER:</span>
+          <span className="text-xs font-medium text-gray-500 tracking-wider whitespace-nowrap">FILTER:</span>
           {categories.map((category) => (
             <button
               key={category}
@@ -135,17 +135,17 @@ export default function Projects() {
         </div>
       </main>
 
-      <footer className="container mx-auto px-4 py-6 mt-20 border-t border-gray-200">
-        <div className="flex justify-between items-center">
-          <p className="text-sm text-gray-500">© 2024 by Leul Solomon.</p>
-          <div className="flex space-x-8">
-            <div className="flex items-center space-x-2">
+      <footer className="container mx-auto px-4 py-6 mt-12 sm:mt-20 border-t border-gray-200">
+        <div className="flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0">
+          <p className="text-sm text-gray-500 text-center sm:text-left">© 2024 by Leul Solomon.</p>
+          <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-8 text-center sm:text-left">
+            <div className="flex flex-col sm:flex-row items-center space-y-1 sm:space-y-0 sm:space-x-2">
               <span className="text-xs font-medium text-gray-500 tracking-wider">CALL</span>
               <Link href="tel:+251932599064" className="text-sm text-gray-900 hover:text-purple-600 transition-colors">
                 +251932599064
               </Link>
             </div>
-            <div className="flex items-center space-x-2">
+            <div className="flex flex-col sm:flex-row items-center space-y-1 sm:space-y-0 sm:space-x-2">
               <span className="text-xs font-medium text-gray-500 tracking-wider">E-MAIL</span>
               <Link
                 href="mailto:leulsolm7@gmail.com"

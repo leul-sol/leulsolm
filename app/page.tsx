@@ -8,18 +8,67 @@ export default function Home() {
     <div className="min-h-screen bg-white">
       <header className="container mx-auto px-4 py-6">
         <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <h1 className="text-xl font-bold">LEUL SOLOMON /</h1>
-            <span className="text-xl text-purple-600">SOFTWARE ENGINEER</span>
+          <div className="flex flex-col sm:flex-row items-start sm:items-center sm:space-x-2">
+            <h1 className="text-lg sm:text-xl font-bold">LEUL SOLOMON /</h1>
+            <span className="text-lg sm:text-xl text-purple-600">SOFTWARE ENGINEER</span>
           </div>
           <Navigation />
         </div>
       </header>
 
-      <main className="container mx-auto px-4 py-20">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-          {/* Sophisticated Visual Element */}
-          <div className="relative h-[600px]">
+      <main className="container mx-auto px-4 py-12 sm:py-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+          {/* Text content - First on mobile, second on desktop */}
+          <div className="space-y-6 sm:space-y-8 order-2 lg:order-1">
+            <div>
+              <h1 className="text-4xl sm:text-5xl lg:text-7xl font-light tracking-tight text-gray-900 mb-4">
+                HEY!
+                <br />
+                <span className="font-normal">EVERYONE</span>
+              </h1>
+            </div>
+            
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link
+                href="/resume"
+                className="px-8 py-3 bg-gray-900 text-white text-sm font-medium tracking-wide hover:bg-gray-800 transition-colors duration-300 text-center"
+              >
+                RESUME
+              </Link>
+              <Link
+                href="/projects"
+                className="px-8 py-3 border border-gray-900 text-gray-900 text-sm font-medium tracking-wide hover:bg-gray-50 transition-colors duration-300 text-center"
+              >
+                PROJECTS
+              </Link>
+            </div>
+            
+            <p className="text-gray-600 leading-relaxed max-w-lg">
+              Experienced mobile application developer, UI/UX designer, and web
+              developer with a strong foundation in project management. Skilled
+              in system design and development, I apply modern, market-ready
+              technologies to deliver reliable, user-centric solutions.
+            </p>
+            
+            {/* Skills list */}
+            <div className="pt-4 space-y-3">
+              <div className="flex items-center gap-3">
+                <div className="w-1 h-1 bg-purple-600 rounded-full"></div>
+                <span className="text-sm text-gray-700">Flutter Mobile Development</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="w-1 h-1 bg-pink-600 rounded-full"></div>
+                <span className="text-sm text-gray-700">UI/UX Design</span>
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="w-1 h-1 bg-purple-600 rounded-full"></div>
+                <span className="text-sm text-gray-700">Project Management</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Sophisticated Visual Element - Second on mobile, first on desktop */}
+          <div className="relative h-[400px] sm:h-[500px] lg:h-[600px] order-1 lg:order-2">
             <style jsx>{`
               @keyframes fadeInUp {
                 from { opacity: 0; transform: translateY(30px); }
@@ -44,40 +93,40 @@ export default function Home() {
             {/* Minimalist geometric composition */}
             <div className="relative w-full h-full">
               {/* Large circle - main element */}
-              <div className="float absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80">
+              <div className="float absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 sm:w-80 sm:h-80">
                 <div className="gradient-shift w-full h-full rounded-full bg-gradient-to-br from-purple-600 via-pink-500 to-purple-700 opacity-10"></div>
               </div>
               
               {/* Accent lines */}
-              <div className="absolute top-20 left-0 w-32 h-0.5 bg-gradient-to-r from-purple-600 to-transparent"></div>
-              <div className="absolute bottom-32 right-0 w-40 h-0.5 bg-gradient-to-l from-pink-600 to-transparent"></div>
+              <div className="absolute top-20 left-0 w-20 sm:w-32 h-0.5 bg-gradient-to-r from-purple-600 to-transparent"></div>
+              <div className="absolute bottom-32 right-0 w-28 sm:w-40 h-0.5 bg-gradient-to-l from-pink-600 to-transparent"></div>
               
               {/* Vertical accent */}
-              <div className="absolute top-0 right-1/3 w-0.5 h-24 bg-gradient-to-b from-purple-600 to-transparent"></div>
+              <div className="absolute top-0 right-1/3 w-0.5 h-16 sm:h-24 bg-gradient-to-b from-purple-600 to-transparent"></div>
               
               {/* Content overlay */}
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center space-y-6">
+                <div className="text-center space-y-4 sm:space-y-6">
                   {/* Initials with sophisticated typography */}
                   <div className="relative">
-                    <h2 className="text-9xl font-light tracking-tighter text-gray-900">
+                    <h2 className="text-6xl sm:text-7xl lg:text-9xl font-light tracking-tighter text-gray-900">
                       LS
                     </h2>
-                    <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-16 h-0.5 bg-gradient-to-r from-transparent via-purple-600 to-transparent"></div>
+                    <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-12 sm:w-16 h-0.5 bg-gradient-to-r from-transparent via-purple-600 to-transparent"></div>
                   </div>
                   
                   {/* Name and title with clean typography */}
                   <div className="space-y-2">
-                    <h3 className="text-2xl font-light tracking-wide text-gray-900">
+                    <h3 className="text-xl sm:text-2xl font-light tracking-wide text-gray-900">
                       Leul Solomon
                     </h3>
-                    <p className="text-sm font-medium tracking-widest text-purple-600 uppercase">
+                    <p className="text-xs sm:text-sm font-medium tracking-widest text-purple-600 uppercase">
                       Designer • Developer
                     </p>
                   </div>
                   
                   {/* Minimalist social links */}
-                  <div className="flex gap-6 justify-center pt-4">
+                  <div className="flex gap-4 sm:gap-6 justify-center pt-4">
                     <Link
                       href="https://www.linkedin.com/in/leul-solomon-link"
                       target="_blank"
@@ -110,69 +159,20 @@ export default function Home() {
               <div className="absolute bottom-0 right-0 w-2 h-2 border-r-2 border-b-2 border-pink-600 opacity-30"></div>
             </div>
           </div>
-
-          {/* Text content */}
-          <div className="space-y-8">
-            <div>
-              <h1 className="text-7xl font-light tracking-tight text-gray-900 mb-4">
-                HEY!
-                <br />
-                <span className="font-normal">EVERYONE</span>
-              </h1>
-            </div>
-            
-            <div className="flex gap-4">
-              <Link
-                href="/resume"
-                className="px-8 py-3 bg-gray-900 text-white text-sm font-medium tracking-wide hover:bg-gray-800 transition-colors duration-300"
-              >
-                RESUME
-              </Link>
-              <Link
-                href="/projects"
-                className="px-8 py-3 border border-gray-900 text-gray-900 text-sm font-medium tracking-wide hover:bg-gray-50 transition-colors duration-300"
-              >
-                PROJECTS
-              </Link>
-            </div>
-            
-            <p className="text-gray-600 leading-relaxed max-w-lg">
-              Experienced mobile application developer, UI/UX designer, and web
-              developer with a strong foundation in project management. Skilled
-              in system design and development, I apply modern, market-ready
-              technologies to deliver reliable, user-centric solutions.
-            </p>
-            
-            {/* Skills list */}
-            <div className="pt-4 space-y-3">
-              <div className="flex items-center gap-3">
-                <div className="w-1 h-1 bg-purple-600 rounded-full"></div>
-                <span className="text-sm text-gray-700">Flutter Mobile Development</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="w-1 h-1 bg-pink-600 rounded-full"></div>
-                <span className="text-sm text-gray-700">UI/UX Design</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="w-1 h-1 bg-purple-600 rounded-full"></div>
-                <span className="text-sm text-gray-700">Project Management</span>
-              </div>
-            </div>
-          </div>
         </div>
       </main>
 
-      <footer className="container mx-auto px-4 py-6 mt-20 border-t border-gray-200">
-        <div className="flex justify-between items-center">
-          <p className="text-sm text-gray-500">© 2024 by Leul Solomon.</p>
-          <div className="flex space-x-8">
-            <div className="flex items-center space-x-2">
+      <footer className="container mx-auto px-4 py-6 mt-12 sm:mt-20 border-t border-gray-200">
+        <div className="flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0">
+          <p className="text-sm text-gray-500 text-center sm:text-left">© 2024 by Leul Solomon.</p>
+          <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-8 text-center sm:text-left">
+            <div className="flex flex-col sm:flex-row items-center space-y-1 sm:space-y-0 sm:space-x-2">
               <span className="text-xs font-medium text-gray-500 tracking-wider">CALL</span>
               <Link href="tel:+251932599064" className="text-sm text-gray-900 hover:text-purple-600 transition-colors">
                 +251932599064
               </Link>
             </div>
-            <div className="flex items-center space-x-2">
+            <div className="flex flex-col sm:flex-row items-center space-y-1 sm:space-y-0 sm:space-x-2">
               <span className="text-xs font-medium text-gray-500 tracking-wider">E-MAIL</span>
               <Link
                 href="mailto:leulsolm7@gmail.com"

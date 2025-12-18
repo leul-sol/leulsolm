@@ -11,9 +11,9 @@ export default function Resume() {
       <div className="relative z-10">
         <header className="container mx-auto px-4 py-6">
           <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-2">
-              <h1 className="text-xl font-bold">LEUL SOLOMON /</h1>
-              <span className="text-xl text-purple-600">SOFTWARE ENGINEER</span>
+            <div className="flex flex-col sm:flex-row items-start sm:items-center sm:space-x-2">
+              <h1 className="text-lg sm:text-xl font-bold">LEUL SOLOMON /</h1>
+              <span className="text-lg sm:text-xl text-purple-600">SOFTWARE ENGINEER</span>
             </div>
             <Navigation />
           </div>
@@ -21,13 +21,14 @@ export default function Resume() {
 
         <main className="container mx-auto px-4 py-12">
           <div className="max-w-4xl mx-auto">
-            <div className="flex justify-between items-center mb-12">
-              <h1 className="text-4xl font-bold">Resume</h1>
+            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-12 gap-4">
+              <h1 className="text-3xl sm:text-4xl font-bold">Resume</h1>
               <a
                 href="/Leul_Solomon.pdf" // Path to your PDF in the public folder
                 download="Leul_Solomon_Resume.pdf" // Set the file name for download
+                className="w-full sm:w-auto"
               >
-                <Button className="bg-gray-900 text-white px-8 py-3 text-sm font-medium tracking-wide hover:bg-gray-800 transition-colors duration-300">
+                <Button className="w-full sm:w-auto bg-gray-900 text-white px-8 py-3 text-sm font-medium tracking-wide hover:bg-gray-800 transition-colors duration-300">
                   Download CV
                 </Button>
               </a>
@@ -169,11 +170,11 @@ export default function Resume() {
           </div>
         </main>
 
-        <footer className="container mx-auto px-4 py-6 mt-20 border-t border-gray-200">
-          <div className="flex justify-between items-center">
-            <p className="text-sm text-gray-500">© 2024 by Leul Solomon.</p>
-            <div className="flex space-x-8">
-              <div className="flex items-center space-x-2">
+        <footer className="container mx-auto px-4 py-6 mt-12 sm:mt-20 border-t border-gray-200">
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0">
+            <p className="text-sm text-gray-500 text-center sm:text-left">© 2024 by Leul Solomon.</p>
+            <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-8 text-center sm:text-left">
+              <div className="flex flex-col sm:flex-row items-center space-y-1 sm:space-y-0 sm:space-x-2">
                 <span className="text-xs font-medium text-gray-500 tracking-wider">CALL</span>
                 <Link
                   href="tel:+251932599064"
@@ -182,7 +183,7 @@ export default function Resume() {
                   +251932599064
                 </Link>
               </div>
-              <div className="flex items-center space-x-2">
+              <div className="flex flex-col sm:flex-row items-center space-y-1 sm:space-y-0 sm:space-x-2">
                 <span className="text-xs font-medium text-gray-500 tracking-wider">E-MAIL</span>
                 <Link
                   href="mailto:leulsolm7@gmail.com"
